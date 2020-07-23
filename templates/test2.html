@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Login</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+	</head>
+	<body>
+		<div class="login">
+			<h1>Login</h1>
+			<div class="links">
+				<a href="{{ url_for('process_livenessdetection') }}" class="active">Login</a>
+			</div>
+			<form action="{{ url_for('process_livenessdetection') }}" method="post">
+				<input type="submit" value="Face login">
+			</form>
+		</div>
+	</body>
+</html>
